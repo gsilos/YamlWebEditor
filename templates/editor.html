@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>YamlWebEditor</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+    <body>
+        <div id="container">
+
+            <div class="title">
+                <h1>YamlWebEditor</h1>
+            </div>
+
+            <div id="content">
+
+                <code><pre>Total Keys: {{TOTAL_LINES}}</pre></code><br>
+
+                <a href="/edit"><button type="button" class="button">Edit</button></a>
+                <a href="/create"><button type="button" class="button">Create</button></a>
+
+
+                <form method="post" action="{{ url_for('update') }}">
+
+                    {{FIELDS}}
+
+                </form>
+
+                <br>
+                <code><pre>{{JSONYML}}</pre></code>
+                <br>
+            </div>
+
+        </div>
+
+    </body>
+</html>

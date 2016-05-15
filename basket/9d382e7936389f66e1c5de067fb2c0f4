@@ -1,0 +1,28 @@
+this:
+  is:
+    called: RPM1
+my:
+  password: now you can see this :-)
+  password2: passwords are not supposed to be on github.
+logging:
+  level:
+    br:
+      com:
+        mytest: INFO
+    org:
+      springframework:
+        web: INFO
+ff4j:
+  webapi:
+    authentication: false
+    authorization: false
+endpoints:
+  health:
+    sensitive: false
+server:
+  port: 999
+number: 1.69
+this:
+  key:
+    does:
+      nothing:

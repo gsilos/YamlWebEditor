@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+
+<body>
+  
+few endpoints...<br><br>
+
+<a href="/start?hostname=192.168.1.1&config=/opt/application/application.yml">try to conect remotely and get a yml</a><br>
+<a href="/start?md5hash=9d382e7936389f66e1c5de067fb2c0f4">edit local stored yml</a><br>
+<a href="/download?md5hash=9d382e7936389f66e1c5de067fb2c0f4">download local stored yml</a><br>
+<br>
+<form action=/start method=get>
+  md5hash: <input type=text name=md5hash>
+  <input type=submit>
+  </form>
+  <br>
+
+</body>
+</html>

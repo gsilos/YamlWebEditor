@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>YamlWebEditor</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+
+            <div class="title">
+                <h1>YamlWebEditor</h1>
+            </div>
+            <div id="content">
+
+                <a href="/start?md5hash={{MD5}}"><button type="button" class="button">Edit</button></a>
+
+                <br><br>
+
+                <code><pre>
+                Save this hash to edit in the future.
+
+                {{MD5}}
+                </pre></code>
+                
+                <code><pre>{{YML}}</pre></code>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

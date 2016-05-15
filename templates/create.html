@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>YamlWebEditor</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+    <body>
+        <div id="container">
+
+            <div class="title">
+                <h1>YamlWebEditor</h1>
+            </div>
+
+            <div id="content">
+
+                <a href="/edit"><button type="button" class="button">Edit</button></a>
+
+                <br><br>
+
+
+                <form method="post" action="{{ url_for('edit') }}">
+
+                    <input type="hidden" name="create" value="True">
+
+                    <div class="block">
+                        <label>Name (use comma for subitens)</label>
+                        <input type="text" style="width:100%" name="name" />
+                    </div>
+
+                    <div class="block">
+                        <label>Value</label>
+                        <input type="text" style="width:100%" name="value"/>
+                    </div>
+
+                    <div class="block">
+                        <label>Field Type</label>
+
+                    <select name="type">
+                        <option value="CHOOSE">CHOOSE</option>
+                        <option value="string">String</option>
+                        <option value="int">Integer</option>
+                        <option value="float">Float</option>
+                        <option value="bool">Boolean</option>
+                    </select>
+                    </div>
+
+                    <br><br>
+
+                    <input type="submit" value="Go" />
+
+                </form>
+
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
